@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.Topic}}</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      {{template "header" .}} 
+      <div class="main">
+        <div class="container">
+            <div class="first_block">
+                <div class="title">
+                    ПУТЕШЕСТВУЙ <br/> С ТУР-ФИРМОЙ NATION
+                </div>
+                <div class="text">
+                    Откройте для себя мир приключений: пешие походы, байдарочные сплавы и велосипедные туры!
+                </div>
+            </div>
+            <div class="gallerey">
+                <div class="g_title">
+                    ПУТЕШЕСТВИЯ В 2024 ГОДУ:
+                </div>
+                <div class="photos">
+                    <img src="/static/assets/lake.png" alt="" class="big_photo">
+                    <span class="ph_b">
+                        БОЛЬШОЕ АЛМАТИНСКОЕ ОЗЕРО
+                    </span>
+                    <div class="first_ph" class="pho">
+                      <div class="block">
+                        <img src="/static/assets/canyon.png" class="litle_photos">
+                        <div class="photo_text">ЧАРЫНСКИЙ <br/>КАНЬОН</div>
+                        
+                      </div>
+                      <div class="block">
+                        <img src="/static/assets/kolsai_lake.png" class="litle_photos">
+                        <div class="photo_text">ОЗЕРО <br/>КОЛЬСАЙ</div>
+                        
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      {{template "footer" .}} 
+
+    </div>
+  </body>
+</html>

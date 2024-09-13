@@ -1,0 +1,6 @@
+{
+    "addr":":8080",
+    "static_dir": "./ui/static",
+    "template_dir": "./ui/templates"
+    
+}
