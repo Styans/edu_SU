@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.Topic}}</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    {{template "header" .}}
+    <div class="wrapper another-wrapper">
+      <div class="container">
+        <div class="another-page">
+          <div class="title">СВЯЖИТЕСЬ С НАМИ:</div>
+          <img src="/static/assets/karolin 1.png" alt="" class="karolin_ing" />
+          <div class="title">КАРОЛИНА</div>
+          <div class="status">Менеджер Nation</div>
+          <div class="contact_text">
+            Телефон:
+            <div class="contact_data">+1234 556 782</div>
+          </div>
+          <div class="contact_text">
+            Почта:
+            <div class="contact_data">karolinagumenyuk18@gmail.com</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{template "footer" .}}
+  </body>
+</html>

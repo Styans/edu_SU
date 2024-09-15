@@ -12,6 +12,8 @@ func (h *Handler) Routes() http.Handler {
 	mux.Handle("/static/", http.StripPrefix("/static/", fileServer))
 
 	mux.HandleFunc("/", h.home)
+	mux.HandleFunc("/about", h.about)
+	mux.HandleFunc("/contacts", h.contacts)
 	return mux
 }
 
