@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.Topic}}</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    {{template "header" .}}
+    <div class="wrapper">
+      <div class="main">
+        <div class="container">
+          <div class="first_block">
+            <div class="title">
+              ПУТЕШЕСТВУЙ <br />
+              С ТУР-ФИРМОЙ NATION
+            </div>
+            <div class="text">
+              Откройте для себя мир приключений: пешие походы, байдарочные
+              сплавы и велосипедные туры!
+            </div>
+          </div>
+          <div class="gallerey">
+            <div class="g_title">ПУТЕШЕСТВИЯ В 2024 ГОДУ:</div>
+            <div class="photos">
+              <div class="top_block">
+                <img src="/static/assets/lake.png" alt="" class="big_photo" />
+                <div class="ph_b">
+                  БОЛЬШОЕ АЛМАТИНСКОЕ ОЗЕРО
+                  <br />
+                  <div class="date_ph">20.09.2024</div>
+                </div>
+              </div>
+              <div class="first_ph">
+                <div class="block">
+                  <img src="/static/assets/canyon.png" class="litle_photos" />
+                  <div class="photo_text">
+                    ЧАРЫНСКИЙ <br />КАНЬОН
+                    <br />
+                    <div class="date_ph">21.09.2024</div>
+                  </div>
+                </div>
+                <div class="block">
+                  <img
+                    src="/static/assets/kolsai_lake.png"
+                    class="litle_photos"
+                  />
+                  <div class="photo_text">
+                    ОЗЕРО <br />КОЛЬСАЙ
+                    <br />
+                    <div class="date_ph">22.09.2024</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forms">
+          <div class="container">
+            <div class="form">
+              <div class="form_title">НРАВИТСЯ? БРОНИРУЙТЕ ТУР</div>
+              <div class="form_text">
+                Заполните небольшую анкету, и мы свяжемся с вами и ответим на
+                все вопросы.
+              </div>
+              <form action="/" class="form_in" method="get">
+                <input
+                  type="email"
+                  class="inputs"
+                  placeholder="Почта"
+                  required
+                />
+                <input
+                  type="text"
+                  class="inputs"
+                  maxlength="100"
+                  minlength="1"
+                  placeholder="Имя"
+                  required
+                />
+                <input
+                  type="text"
+                  class="inputs"
+                  maxlength="500"
+                  minlength="1"
+                  required
+                  placeholder="Какой тур хотите Выбрать?"
+                />
+                <button type="submit" class="btn-form">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    {{template "footer" .}}
+  </body>
+</html>
