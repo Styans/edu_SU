@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+        .post-title {
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: white;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .pagination a {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Magazine</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tech</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Business</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Entertainment</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Social</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Posts section -->
+            <div class="col-md-8">
+                <div class="post mb-4">
+                    <h5 class="post-title">The Evolving Role of Social Media in News Organizations [LIVE Q&A]</h5>
+                    <p><small>Posted by Charlie | 1 hour ago | 30 comments</small></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="post mb-4">
+                    <h5 class="post-title">Battlefield 3 Has Record Opening Weekend Despite Tech Woes</h5>
+                    <p><small>Posted by Peter | 1 hour ago | 36 comments</small></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="post mb-4">
+                    <h5 class="post-title">How 5 Tech Giants Are Giving Back to Education</h5>
+                    <p><small>Posted by Stan | 1 hour ago | 25 comments</small></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="post mb-4">
+                    <h5 class="post-title">Apple Gives Its Key Execs $400 Million in Bonuses</h5>
+                    <p><small>Posted by Daniel | 1 hour ago | 78 comments</small></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="post mb-4">
+                    <h5 class="post-title">7 Ways to Create a Memorable Customer Experience With Social Media</h5>
+                    <p><small>Posted by Mark | 3 hours ago | 155 comments</small></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <!-- Pagination -->
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Sidebar section -->
+            <div class="col-md-4">
+                <div class="mb-4">
+                    <h5>Search</h5>
+                    <input type="text" class="form-control" placeholder="Search here...">
+                    <button class="btn btn-primary btn-block mt-2">Search</button>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Sponsors</h5>
+                    <div class="row ">
+                        <div class="col-6 pt-2"><img src="img/banner_1.jpg" alt="Sponsor 1" class="img-fluid"></div>
+                        <div class="col-6 pt-2"><img src="img/banner_2.jpg" alt="Sponsor 2" class="img-fluid"></div>
+                        <div class="col-6 pt-2"><img src="img/banner_3.jpg" alt="Sponsor 3" class="img-fluid"></div>
+                        <div class="col-6 pt-2"><img src="img/banner_4.jpg" alt="Sponsor 4" class="img-fluid"></div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Ride Magazine News</h5>
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button class="btn btn-primary btn-block mt-2">Subscribe</button>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Social Media</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Magazine</h5>
+                    <p>Ride Magazine was founded in 2012. A full service Web Design, Marketing and Advertising Company geared to help small and medium-size businesses.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Recent Posts</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">TVGuide.com Watchlist Predicts Fall TV Shows Success</a></li>
+                        <li><a href="#">7 Ways to Create a Memorable Customer Experience With Social Media</a></li>
+                        <li><a href="#">Apple Gives Its Key Execs $400 Million in Bonuses</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Our Archives</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">March 2011</a></li>
+                        <li><a href="#">February 2011</a></li>
+                        <li><a href="#">January 2011</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
