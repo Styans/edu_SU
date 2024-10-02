@@ -12,7 +12,6 @@ int main() {
         cin >> strings[i];
     }
 
-    // Сортируем строки
     sort(strings.begin(), strings.end());
 
     cin >> m;
@@ -20,15 +19,13 @@ int main() {
         string query;
         cin >> query;
 
-        // Используем бинарный поиск для нахождения позиции верхней границы
-        auto it = upper_bound(strings.begin(), strings.end(), query);
+         auto it = upper_bound(strings.begin(), strings.end(), query);
 
-        // Проверяем, есть ли строка меньше или равная query
         if (it == strings.begin()) {
-            cout << "NO" << endl;
+            cout << "NO" << endl; 
+            
         } else {
-            --it;
-            cout << *it << endl;
+             cout << *(it - 1) << endl;
         }
     }
 
