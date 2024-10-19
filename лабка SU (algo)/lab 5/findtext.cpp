@@ -3,7 +3,24 @@
 #include <algorithm>
 using namespace std;
 
+int binary_search(const vector<string>& strings, const string& query) {
+    int low = 0, high = strings.size() - 1, best = -1;
+    while (low <= high) {
+        int mid = (low + high) / 2;
+        if (strings[mid] <= query) {
+            best = mid;
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+    return best;
+}
+
 int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     int n, m;
     cin >> n;
 
@@ -19,13 +36,11 @@ int main() {
         string query;
         cin >> query;
 
-         auto it = upper_bound(strings.begin(), strings.end(), query);
-
-        if (it == strings.begin()) {
-            cout << "NO" << endl; 
-            
+        int idx = binary_search(strings, query);
+        if (idx == -1) {
+            cout << "NO" << endl;
         } else {
-             cout << *(it - 1) << endl;
+            cout << strings[idx] << endl;
         }
     }
 
